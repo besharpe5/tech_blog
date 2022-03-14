@@ -5,6 +5,9 @@
   ## Description
  A CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well.
 
+ ## Heroku Deployment Link
+https://gentle-sierra-89831.herokuapp.com/
+
   ## Table of Contents
   * [Installation](#installations)
   * [License](#license)
