@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 // this will find all users
 router.get('/', (req, res) => {
@@ -79,7 +80,7 @@ router.post('/', (req, res) => {
 });
 
 // this will allow a user to log in
-router.post('/login', (re, res) => {
+router.post('/login', (req, res) => {
     User.findOne({
         where: {
             username: req.body.username

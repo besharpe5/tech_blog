@@ -1,0 +1,15 @@
+<button type="submit" class="btn"><a class="new-post-button" href="/dashboard/new">+ New Post</a></button>
+
+<h1 class="my-posts-title">My Posts</h1>
+
+
+
+{{#if posts.length}}
+<section>
+    {{#each posts as |post|}}
+      {{> dashboard-post-info post}}
+    {{/each}}
+{{/if}}
+
+
+<script src="/javascript/add-post.js"></script>

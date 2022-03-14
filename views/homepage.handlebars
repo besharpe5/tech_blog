@@ -1,0 +1,14 @@
+<div class="post">
+
+    {{#if loggedIn}}
+    <button type="submit" class="button-margin"><a class="new-post-button " href="/dashboard/new">+ New Post</a></button>
+    {{/if}}
+
+    {{#each posts as |post| }}
+        {{> post-info post}}
+    {{/each}}
+
+</div>
+
+
+<script src="/javascript/add-post.js"></script>
